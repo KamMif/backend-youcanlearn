@@ -29,10 +29,9 @@ export async function Requester<T>(url: string, method: Method, requestData: any
         console.log({error});
         return error;
     }
-
 }
 
-export async function getYoutubeData(link: string) {
+export async function getLinkPreview(link: string) {
     try {
         const resp = await fetch(link);
         return await resp.text();
