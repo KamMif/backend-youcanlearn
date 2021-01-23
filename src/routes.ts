@@ -14,7 +14,7 @@ export const routes = (app: any) => {
       const { env } = process;
       try {
         const { rows } = await connections.query('SELECT * FROM users')
-        return res.status(200).json({env});
+        return res.status(200).json({env, rows});
       } catch (error) {
         return res.status(400).send(`Error: ${error}`)
       }
