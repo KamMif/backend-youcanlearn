@@ -4,11 +4,11 @@
   "description": "service for represent data for preview any links",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.ts",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED='0' nodemon ./src/index.ts",
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
-    "start": "node ./build/index.js"
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED='0' node ./build/index.js"
   },
   "repository": {
     "type": "git",

@@ -7,4 +7,5 @@ export const connections = new Pool({
   database: 'youcanlearndb',
   password: 'e6l04e1g5lyeozjt',
   port: 25060,
+  ssl: true
 });
