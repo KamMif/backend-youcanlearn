@@ -11,7 +11,7 @@ export const routes = (app: any) => {
         },
     );
     app.get('/test-bd', async (req: Request, res: Response) => {
-      const { env } = process;
+      const { env: { env } } = process;
       try {
         const { rows } = await connections.query('SELECT * FROM users')
         return res.status(200).json({env, rows});
