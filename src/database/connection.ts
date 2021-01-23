@@ -2,9 +2,10 @@ import database from 'pg';
 
 const Pool = database.Pool;
 export const connections = new Pool({
-  user: 'youcanlearn',
-  host: 'localhost',
+  user: 'doadmin',
+  host: 'youcanlearndb-do-user-8574408-0.b.db.ondigitalocean.com',
   database: 'youcanlearndb',
-  password: '9191420152',
-  port: 5432
+  password: 'e6l04e1g5lyeozjt',
+  port: 25060,
+  sslmode: 'require'
 });
